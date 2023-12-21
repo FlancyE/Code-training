@@ -1,3 +1,4 @@
+#10931_Parity
 while True:
     try:
         t = int(input())

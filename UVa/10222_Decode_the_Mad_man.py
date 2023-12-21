@@ -1,4 +1,4 @@
-#10222 Decode the Mad man
+#10222 Decode the Mad man (暴力解法)
 dictionary = {'e':'q','d':'a','c':'z','r':'w','f':'s','v':'x','t':'e','g':'d',
               'b':'c','y':'r','h':'f','n':'v','u':'t','j':'g','m':'b','i':'y',
               'k':'h',',':'n','o':'u','l':'j','.':'m','p':'i',';':'k','/':',',

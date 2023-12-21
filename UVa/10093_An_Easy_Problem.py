@@ -1,4 +1,4 @@
-#An Easy Problem!
+#10093 An Easy Problem!
 while True:
     s = input()
     if not s:

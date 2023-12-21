@@ -1,3 +1,4 @@
+#10222 Decode the Mad man (正規解法)
 keyboard = " `1234567890-=qwertyuiop[]asdfghjkl;'zxcvbnm,./"
 
 try:

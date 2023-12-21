@@ -1,3 +1,4 @@
+#00674_Coin_Change
 N = [1, 5, 10, 25, 50]     #幣值的種類 (list)
 
 lenN = len(N)       #

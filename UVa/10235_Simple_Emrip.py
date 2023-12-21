@@ -1,3 +1,4 @@
+#10235_Simple_Emrip
 def isprime(n):
     if n <= 1:
         return False

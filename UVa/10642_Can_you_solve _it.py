@@ -1,3 +1,4 @@
+#10642_Can_you_solve _it
 def loc(x, y):
     return (x + y) * (x + y + 1) // 2 + x
 

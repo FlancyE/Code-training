@@ -1,3 +1,4 @@
+#00100 The 3n+1 problem
 while True:
     try:
         ii, jj = map(int, input().split())

@@ -1,4 +1,4 @@
-#UVa 11150 - Cola
+#11150 - Cola
 while True:
     try:
         N = int(input())
