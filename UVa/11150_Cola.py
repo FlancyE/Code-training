@@ -4,14 +4,14 @@ while True:
         N = int(input())
         cola = N
         empty = 0
-        while cola >= 3:  
+        while cola >= 3:    #一次以喝三瓶為單位
             empty += 3
-            cola -= 2     
+            cola -= 2       # (-3 + 1 = 2)
 
-        if cola == 2:      
-            empty += 3      
+        if cola == 2:       
+            empty += 3      #剩兩瓶，跟朋友借一空瓶
         else:  
-            empty += cola  
+            empty += cola   # (cola == 0 or cola == 1)
 
         print(empty)
 
