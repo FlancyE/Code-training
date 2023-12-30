@@ -1,16 +1,15 @@
-#10031 Vito's Family
+#10031 Vito's Family (Refer to others' example)
+#https://blog.iddle.dev/public/2023/03/18/Python-UVa-10041-Vito-s-Family/
 
-def main():
-    cs = int(input())
-    for _ in range(cs):
-        n = int(input())
-        s = list(map(int, input().split()))
-        s.sort()
-        median = s[n // 2]
-        total_diff = 0
-        for k in range(n):
-            total_diff += abs(s[k] - median)
-        print(total_diff)
+def distance(n, nums):
+    nums.sort()
+    mid = nums[n//2]
+    ans = 0
+    for i in nums:
+        ans += abs(i - mid)
+    return ans
 
-if __name__ == "__main__":
-    main()
+T = int(input())
+for t in range(T):
+    n = list(map(int, input().split()))
+    print(distance(n[0], n[1:]))
