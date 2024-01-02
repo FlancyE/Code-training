@@ -1,7 +1,7 @@
 #11824 A minimum land price
 def count_price(nums):
     sum = 0
-    nums = sorted(nums)[::-1]   #不太懂
+    nums = sorted(nums)[::-1]  #不太懂，由大到小整理
     for i in range(len(nums)):
         sum += 2 * (nums[i] ** (i+1))
     return sum if sum < 5000000 else "Too expensive"
