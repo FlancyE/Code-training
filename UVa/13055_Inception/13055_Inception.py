@@ -3,14 +3,14 @@
 def sleep_stack(n, codes):
     dream = []
     for code in codes:
-        if code[0] == 'Sleep':
+        if code[0] == "Sleep":
             dream.append(code[1])
-        elif code[0] == 'Test':
+        elif code[0] == "Test":
             if dream:
                 print(dream[-1])
             else:
                 print("Not in a dream")
-        elif code[0] == 'Kick':
+        elif code[0] == "Kick":
             if dream:
                 dream.pop()
             
