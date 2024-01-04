@@ -17,7 +17,7 @@ def sleep_stack(codes):
 n = int(input())
 while True:
     try:
-        codes = []                  #(Sleep A / Test / Kick)
+        codes = []                  #(Sleep X / Test / Kick)
         for i in range(n):
             codes.append(input().split())   #用換行做為區分，並存進 list codes
         sleep_stack(codes)
