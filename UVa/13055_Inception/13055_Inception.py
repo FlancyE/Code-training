@@ -1,13 +1,13 @@
 #13055 Inception
 
-def sleep_stack(n, codes):
-    dream = []
-    for code in codes:
+def sleep_stack(codes):
+    dream = []                      #負責存放人名的Stack
+    for code in codes:              #遍歷所有 codes 裡面的東西 ("Sleep Dom" => code[0] = Sleep / code[1] = Dom)
         if code[0] == "Sleep":
-            dream.append(code[1])
+            dream.append(code[1])   #在 dream stack 新增人名
         elif code[0] == "Test":
-            if dream:
-                print(dream[-1])
+            if dream:               #*如果 dream stack 不是空的
+                print(dream[-1])    #print 最右邊的人名
             else:
                 print("Not in a dream")
         elif code[0] == "Kick":
@@ -17,9 +17,9 @@ def sleep_stack(n, codes):
 n = int(input())
 while True:
     try:
-        codes = []
+        codes = []                  #(Sleep A / Test / Kick)
         for i in range(n):
-            codes.append(input().split())
-        sleep_stack(n, codes)
+            codes.append(input().split())   #用換行做為區分，並存進 list codes
+        sleep_stack(codes)
     except EOFError:
         break
