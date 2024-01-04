@@ -15,4 +15,4 @@ for _ in range(T):
 		if L == 0:
 			print(count_price(nums))
 			break
-		nums.append(L)  #把L添加到nums後面
+		nums.append(L)  #把L添加到nums裡面
