@@ -2,18 +2,17 @@
 
 def count_price(nums):
 	sum = 0
-	nums.sort(reverse=True)
+	nums.sort(reverse=True)     #由大到小排序 (一般是由小到大)
 	for i in range(len(nums)):
-		sum += 2 * (nums[i] ** (i + 1))
-	return sum if sum < 5000000 else "Too expensive"
+		sum += 2 * (nums[i] ** (i + 1))     # 2 * (X^i)
+	return sum if sum < 5000000 else "Too expensive"   
 
-T = int(input())
-nums = []
+T = int(input())       #初始劃一個列表
 for _ in range(T):
 	nums = []
 	while True:
-		L = int(input())
+		L = int(input())    #每塊土地的價格
 		if L == 0:
 			print(count_price(nums))
 			break
-		nums.append(L)
+		nums.append(L)  #把L添加到nums後面
