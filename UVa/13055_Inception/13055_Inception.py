@@ -1,0 +1,24 @@
+#13055 Inception
+
+def sleep_stack(n, codes):
+    dream = []
+    for code in codes:
+        if code[0] == "Sleep":
+            dream.append(code[1])
+        elif code[0] == "Test":
+            if dream:
+                dream.append(code[1])
+            else:
+                print("Not in a dream")
+        elif code[0] == "Kick":
+            dream.pop()
+            
+n = int(input())
+while True:
+    try:
+        codes = []
+        for i in range(n):
+            codes.append(input().split())
+        sleep_stack(n, codes)
+    except EOFError:
+        break
