@@ -12,7 +12,7 @@ def sleep_stack(codes):
                 print("Not in a dream")
         elif code[0] == "Kick":
             if dream:
-                dream.pop()
+                dream.pop()         #將最右邊的元素剔除
             
 n = int(input())
 while True:
