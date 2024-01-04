@@ -1,4 +1,5 @@
 #11824 A minimum land price
+
 def count_price(nums):
     sum = 0
     nums = sorted(nums)[::-1]  #不太懂，由大到小整理
