@@ -1,32 +1,21 @@
 #10235_Simple_Emrip
-def isprime(n):
-    if n <= 1:
-        return False
-    for k in range(2, n):
-        if n % k == 0:
+def isPrime(n):
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:  #判斷是否為質數 (被自己的因數整除)
             return False
     return True
-
-def reversed_number(n):
-    reversed_n = 0
-    while n:
-        reversed_n = reversed_n * 10 + n % 10   #左移一位 + n 的"餘數"
-        n //= 10    # n = n // 10 (求 n 的商數，作為新的 n)
-    return reversed_n
-
+        
+def solve(n):
+    if isPrime(n) and isPrime(int(str(n)[::-1])) and n != int(str(n)[::-1]):
+        return f"{n} is emirp."
+    elif isPrime(n):
+        return f"{n} is prime."
+    else:
+        return f"{n} is not prime."
+    
 while True:
     try:
         n = int(input())
-        if isprime(n):
-            n1 = n
-            n2 = reversed_number(n1)
-            if n2 != n and isprime(n2):
-                print(f"{n} is emrip.")    
-            else:
-                print(f"{n} is prime.")
-        else:
-            print(f"{n} is not prime.")
-
+        print(solve(n))
     except EOFError:
         break
-        

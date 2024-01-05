@@ -1,3 +1,5 @@
+#11057 Exact Sum
+#https://github.com/cmlaih/CPE/tree/main/1-2star/11057%20Exact%20Sum
 while True:
     try:
         n = int(input())
