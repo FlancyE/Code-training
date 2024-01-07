@@ -6,9 +6,9 @@ while True:
         for i in range(len(n)):
             if n[i] == '"':
                 if c % 2 == 0:
-                    n[i] == '`'
+                    n[i] == '``'
                 else:
-                    n[i] == "'"
+                    n[i] == "''"
                 c += 1
         print(''.join(n))
     except EOFError:
