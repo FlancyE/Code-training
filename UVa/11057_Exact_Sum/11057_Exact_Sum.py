@@ -23,7 +23,6 @@ while True:
                 
         print(f"Peter should buy books whose prices are {prices[best_i]} and {prices[best_j]}.")
         print()
-        input()
 
     except EOFError:
         break
