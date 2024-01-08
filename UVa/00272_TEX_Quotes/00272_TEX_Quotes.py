@@ -1,16 +1,16 @@
 #272 TEX Quotes
-c = 0
+count = 0 # 記得放在最外圍，不要歸0
 while True:
     try:
-        n = list(input())
-        for i in range(len(n)):
-            if n[i] == '"':
-                if c % 2 == 0:
-                    n[i] == '``'
+        s = list(input())
+        for i in range(len(s)):
+            if s[i] == '"':
+                if count % 2 == 0: 
+                    s[i] = '``'
                 else:
-                    n[i] == "''"
-                c += 1
-        print(''.join(n))
+                    s[i] = "''"
+                count += 1
+        print(''.join(s))
     except EOFError:
         break
     
