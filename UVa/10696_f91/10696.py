@@ -1,13 +1,10 @@
-def f(n):
-    if n >= 101:
-        return n - 10
-    else:
-        return 91
-    
 while True:
     n = int(input())
-    if not n:
+    if n == 0:
         break
-    print(f"f91({n}) = {f(n)}")
+    if n >= 101:
+        print(f"f({n}) = {n - 10}")
+    else:
+        print(f"f({n}) = 91")
     
     
