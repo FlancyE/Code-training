@@ -15,3 +15,5 @@ while True:
         print("Yes")
     else:
         print("No")
+        
+#PYTH3 AC 0.040
