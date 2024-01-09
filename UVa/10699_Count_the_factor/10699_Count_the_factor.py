@@ -1,10 +1,9 @@
 #10699 Count the factor
 def count_factor(n):
-    cnt = 0
+    count = 0
     for i in range(2, n):
         if n % i == 0:
-            cnt += 1
-
+            count += 1
     return
 
 while True:
