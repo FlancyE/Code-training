@@ -9,3 +9,5 @@ while True:
         print(f"The parity of {t0} is {d} (mod 2).")
     except:
         break
+    
+#PYTH3 AC 0.080

@@ -13,3 +13,5 @@ T = int(input())
 for t in range(T):
     n = list(map(int, input().split()))
     print(distance(n[0], n[1:]))
+    
+#PYTH3 0.050

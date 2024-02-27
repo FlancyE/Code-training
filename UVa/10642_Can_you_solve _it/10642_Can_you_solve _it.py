@@ -10,3 +10,5 @@ def main():
         print("Case {}: {}".format(t, result))
 
 main()
+
+#PYTH3 AC 0.060

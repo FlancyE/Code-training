@@ -20,3 +20,4 @@ try:
 except EOFError:
     pass
 
+#PYTH3 AC 0.050

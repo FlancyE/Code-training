@@ -27,3 +27,4 @@ while True:
     except EOFError:
         break
             
+#PYTH3 AC 0.090

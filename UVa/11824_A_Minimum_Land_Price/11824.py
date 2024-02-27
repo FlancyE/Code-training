@@ -16,3 +16,5 @@ for _ in range(T):
 			print(count_price(nums))
 			break
 		nums.append(L)  #把L添加到nums裡面
+  
+#PYTH3 AC 0.040

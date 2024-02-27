@@ -23,3 +23,5 @@ while True:
         sleep_stack(codes)
     except EOFError:
         break
+    
+#PYTH3 AC 0.170
