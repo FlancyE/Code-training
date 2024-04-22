@@ -1,4 +1,4 @@
-//UVa13185 by ChatGPT
+//UVa13185 adjusted by ChatGPT
 #include <bits/stdc++.h>
 using namespace std;
 
