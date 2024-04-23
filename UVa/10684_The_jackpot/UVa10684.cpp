@@ -34,3 +34,5 @@ int main(){
 	}
 	return 0;
 }	
+
+//C++11 AC 0.120
